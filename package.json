@@ -1,0 +1,21 @@
+{
+  "name": "cybelts",
+  "version": "0.0.1",
+  "description": "",
+  "main": "./src/index.ts",
+  "scripts": {
+    "dev": "concurrently -k -n \"TypeScript,Node\" -c \"yellow.bold,cyan.bold\" \"npm run watch-ts\" \"nodemon ./dist/index.js\"",
+    "watch-ts": "tsc -w"
+  },
+  "author": "TJBK",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^11.5.1",
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^13.7.0",
+    "concurrently": "^5.1.0",
+    "nodemon": "^2.0.2"
+  }
+}
